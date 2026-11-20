@@ -41,4 +41,4 @@ if (sha2 !== sha) {
   throw new Error(`copy sha256 mismatch: ${sha2} != ${sha}`);
 }
 console.log(`entry.png ${width}x${height} ${data.length} bytes sha256 ${sha}`);
-console.log(`copied to ${out} OK`);
+console.log(`verified ${out} sha256 ${sha2}`);
